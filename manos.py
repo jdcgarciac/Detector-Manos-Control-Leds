@@ -17,7 +17,7 @@ baud_rate = 9600
 
 # Inicializar la conexión serial
 ser = serial.Serial(port=puerto, baudrate=baud_rate, timeout=1)# Asegúrate de ajustar el puerto COM adecuadamente
-#Esperar 2 seg
+#Esperar 1 seg
 time.sleep(1)
 # Verificar si la conexión serial está abierta
 if ser.is_open:
@@ -64,7 +64,7 @@ while True:
     # Enviar los datos a través de la conexión serial
     datos = str(total_dedos)
     ser.write(datos.encode())
-    time.sleep(0.1)  # Espera 0.5 segundo
+    time.sleep(0.1)  # Espera 0.1 segundo
     print(datos.encode())
 
     # Mostrar el fotograma con las manos detectadas
