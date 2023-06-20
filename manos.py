@@ -1,3 +1,8 @@
+#Instalar librerias
+#pip install mediapipe==0.10.1
+#pip install pyserial==3.5
+#pip install opencv-python==4.7.0.72
+ 
 #Librerias
 import cv2
 import mediapipe as mp
